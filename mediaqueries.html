@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        margin-bottom: 15px;
+    }
+    p{
+        border:1px solid saddlebrown;
+        margin-bottom: 15px;
+        overflow: clip;
+    }
+    #p1{
+        background-color: #a52aa5;
+        width: 300px;
+        height: 300px;
+        
+    }
+    #p2{
+        background-color: #deb88d;
+        width: 50px;
+        height: 50px;
+    }
+    /*for large devices*/
+    @media (min-width:1200px){
+        #p1{
+            width: 80%;
+        }
+        #p2{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    /*for medium pixels*/
+    @media (min-width:900px) and (max-width:1199px){
+        #p1{
+            width: 50%;
+        }
+        #p2{
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>
+<body>
+    <h1>This is media queries</h1>
+    <div>
+        <p id="p1">padding is for inner content 
+            margin is from outside
+            1. when i set the width of the box it is by default not taking the complete widht but the
+               width of the content the border and padding counts are extra over the specified widht
+            2. to adjust this there is a property called box-sizing which when set to border box makes the entire widht of the box 
+               along with border and padding equal to the specified width, the size of content is adjusted accordingly
+            3. box sizing cannot be inherited from parent as in if u specify it for body it won't work throughout the page
+            4. start selector: says select every element and apply the specified property to it (new by CSS3)
+            5. MARGINS : the side to side margins add up while the below and up margins collapse the bigger one is the final margin
+            6. overflow property: if i have a hieght or width in which my content doesn't fit the content will overflow out of the border and
+               margins, to solve this i would specify overflow as auto which provides a scroll bar to scroll through my content
+               i can also have hidden(clip), scroll(scrolling both axes) and visible(default)</p>
+        <p id="p2">padding is for inner content 
+            margin is from outside
+            1. when i set the width of the box it is by default not taking the complete widht but the
+               width of the content the border and padding counts are extra over the specified widht
+            2. to adjust this there is a property called box-sizing which when set to border box makes the entire widht of the box 
+               along with border and padding equal to the specified width, the size of content is adjusted accordingly
+            3. box sizing cannot be inherited from parent as in if u specify it for body it won't work throughout the page
+            4. start selector: says select every element and apply the specified property to it (new by CSS3)
+            5. MARGINS : the side to side margins add up while the below and up margins collapse the bigger one is the final margin
+            6. overflow property: if i have a hieght or width in which my content doesn't fit the content will overflow out of the border and
+               margins, to solve this i would specify overflow as auto which provides a scroll bar to scroll through my content
+               i can also have hidden(clip), scroll(scrolling both axes) and visible(default)</p>
+    </div>
+</body>
+</html>

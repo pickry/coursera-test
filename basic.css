@@ -1,0 +1,36 @@
+/* have selector {
+    rules the declaration
+    property : value
+} 
+1. styling can also be done with in the html opening tag this is called inline styling
+2. to link a css stylesheet to an html file we use link tage specify the rel and href attributes e.g. 
+   <link rel = "stylesheet" href = "filename.css"
+3.  to have a working knowledge of the cascading algorithm, you should understand these four concepts.
+    And these are origin, or origin precedence, merge, as well as inheritance and specificity. 
+        a. origin
+        b. merge is when external css says somethings for the element and some other rules too are given about that element in the
+           document itself in style tag both merge and apply to the element
+        c. DOM tree i.e. inheritance all children, direct or indirect will inherit properties of the parent element
+        d. specificity i.e. most specific selector combination wins
+            i. to decide specificity which combination will win we have a rule
+            ii. style=""  |     id     |     class    | no. of elements
+            iii. higher the score that combination wins
+            iv. note : if u want to use the particular style only mark it !important along with value
+4. styling text points in order
+    a. font family
+    b. color
+    c. font size
+    d. text transform : capitalize or uppercase or lowercase
+    e. font weight bold etc
+    f. font style
+    g. text align
+   em and percentage 
+   em is the relative size of the current text size
+   percentage is the percentage of the current text size increase
+   GO TO FILE BASIC HTML FOR EXAMPLE
+5. absolute and relative postitioning
+   relative positioning is when an element is made anchor and you can shift it from left and right or bottom or top
+   for absolute positioning the parent element with whose respect u wanna move should be declared relative
+   and then you can set the top bottom left and right
+6. media queries are for perfect layout according to size of device
+*/

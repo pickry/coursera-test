@@ -1,0 +1,26 @@
+urn: uniform resource name
+    uniquely identifies resource or name of resource
+    does not tell us how to get the resource
+uri: uniform resource identifier
+    uniquely identifies resource or location of resource
+    does not necessarily tell us how to get the resource
+url: uniform resource locator
+    form of uri that provides info on how to get resource
+
+HTTP REQUEST STRUCTURE
+GET / index.html? firstName=Yaakov HTTP/1.1
+method--URI String--Query String-----HTTP version
+
+Ajax: Asynchronous Javascript and XML
+
+JSON
+Javascript object notation
+Rules: 
+1. property names must be in double quotes and the string values too 
+2. rest is like object literals
+3. json is just a string whose syntax is based on object literals
+4. for conversions
+    a. from json string to js object
+        var obj = json.parse(jsonString)
+    b. from obj to string
+        var str = json.stringify(jsobject)

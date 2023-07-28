@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: lightblue;
+    }
+    p{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        float: left;/*this is after i applied clear left to section the boxes are to left
+        and the section is below them giving all of the div a nice bg*/
+        /*float: left; when this is in action the section just has a bg color
+        and the paragraphs overflow
+        This is happening because of the same point that I made before. When you 
+        float elements it takes them out of the regular document flow, therefore 
+        it collapses and hide, and surrounds the last section element which has 
+        actually some text in it. In order to correct it, we need to tell the browser 
+        that when it comes to this section element, the browser should resume the regular
+         document flow. And the way that we do that is by using the clear property. */
+    }
+    #p1{
+        background-color: lightgoldenrodyellow;
+        float: left;
+        height: 150px;
+    }
+    #p2{
+        background-color: lightseagreen;
+        float: right;
+        height: 100px;
+    }
+    #p3{
+        background-color: lightpink;
+        clear: both;
+    }
+    #p4{
+        background-color: lightgray;
+    }
+    section{
+        clear: left;/*specifies that there should be nothing on left of the section
+        that brings the content below the paragraphs and no overflow is there*/
+    }
+</style>
+<!--if i float p1 to left and p2 to right and if i clear left of p3 , the clear property
+    doesn't give appropriate space for left according to height of the p2 to clear both left and right
+    and avoid overlapping of elements we have clear both
+
+-->
+<body>
+    <h1>Floating</h1>
+    <div>
+    
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <section>thi is the section i don't know about</section>
+    </div>
+</body>
+</html>

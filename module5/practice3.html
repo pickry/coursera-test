@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="firstlec.js"></script>
+</head>
+<body>
+    <h1 id="title">This is new</h1>
+    <p id="para">this is a form
+    <input id="thip">
+    <button>Say it</button><!--onclick="sayHello()"  using onclick or on something attributes dirties the html
+    the html doesn't need to know anything about out javascript hence we have unobstructive event binding-->
+    </p>
+    <div id="content"></div>
+    
+    <!-- load here instead of head otherwise there is a loading lag that id title is not loaded yet in browser and yet 
+    asking for it in the js file so null returns
+putting it here loads everything b4 executing js program -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background-image: url('bake'); 
+    text-align:center;
+    border: 4px ridge white;
+}
+h1{
+    color: #DB7D34;
+    font-family: 'Cedarville Cursive, cursive'; 
+    font-size: 40px;
+}
+h4{
+    color: #DB7D34;
+    font-family: 'Cedarville Cursive, cursive'; 
+    font-size: 25px;
+}
+.forms input{
+    margin-bottom: 4px;
+    width: 400px;
+    height: 30px;
+    
+}
+.forms button{
+    background-color:orange;
+    border: none;
+    height: 20px;
+    width: 150px;
+
+    margin-bottom: 4px;
+}
+.forms button:hover{
+    height: 25px;
+    width: 160px;
+    background-color: lightsalmon;
+
+}

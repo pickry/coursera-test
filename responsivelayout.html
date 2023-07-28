@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--this below line is specified because it is a default feature of chrome to 
+    zoom out the websites that donot fit in the device but since we have made a responsive website 
+    zooming out is not required-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    h1{
+        margin-bottom: 15px;
+    }
+    p{
+        border: 1px solid orangered;
+        background-color: lightgoldenrodyellow;
+        width: 90%;
+        height: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        color: mistyrose;
+    }
+    .row{
+        width: 100%;
+    }
+    @media (min-width: 1200px) {
+        .col-lg-1, .col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,
+        .col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+            float: left;
+            border: 1px solid darkred;
+        }
+        .col-lg-1{
+            width: 8.33%
+        }
+        .col-lg-2{
+            width: 16.66%
+        }
+        .col-lg-3{
+            width: 25%
+        }
+        .col-lg-4{
+            width: 33%
+        }
+        .col-lg-5{
+            width: 41.66%
+        }
+        .col-lg-6{
+            width: 50%
+        }
+        .col-lg-7{
+            width: 58.33%
+        }
+        .col-lg-8{
+            width: 66.66%;
+        }
+        .col-lg-9{
+            width: 74.99%;
+        }
+        .col-lg-10{
+            width: 83.33%;
+        }
+        .col-lg-11{
+            width: 91.66%;
+        }
+        .col-lg-12{
+            width: 100%;
+        }
+
+    }
+    @media (min-width: 950px) and (max-width: 1199px){
+        .col-mg-1, .col-mg-2,.col-mg-3,.col-mg-4,.col-mg-5,.col-mg-6,
+        .col-mg-7,.col-mg-8,.col-mg-9,.col-mg-10,.col-mg-11,.col-mg-12{
+            float: left;
+            border: 1px solid darkred;
+        }
+        .col-mg-1{
+            width: 8.33%
+        }
+        .col-mg-2{
+            width: 16.66%
+        }
+        .col-mg-3{
+            width: 25%
+        }
+        .col-mg-4{
+            width: 33%
+        }
+        .col-mg-5{
+            width: 41.66%
+        }
+        .col-mg-6{
+            width: 50%
+        }
+        .col-mg-7{
+            width: 58.33%
+        }
+        .col-mg-8{
+            width: 66.66%;
+        }
+        .col-mg-9{
+            width: 74.99%;
+        }
+        .col-mg-10{
+            width: 83.33%;
+        }
+        .col-mg-11{
+            width: 91.66%;
+        }
+        .col-mg-12{
+            width: 100%;
+        }
+
+    }
+    
+
+
+
+</style>
+<body>
+    <h1>This is responsive layout</h1>
+    <div class="row">
+        <div class="col-lg-3 col-mg-6"><p>item 1</p></div>
+        <div class="col-lg-3 col-mg-6"><p>item 2</p></div>
+
+        <div class="col-lg-3 col-mg-6"><p>item 3</p></div>
+        <div class="col-lg-3 col-mg-6"><p>item 4</p></div>
+        <div class="col-lg-3 col-mg-6"><p>item 5</p></div>
+        <div class="col-lg-3 col-mg-6"><p>item 6</p></div>
+        <div class="col-lg-3 col-mg-6"><p>item 7</p></div>
+        <div class="col-lg-3 col-mg-6"><p>item 8</p></div>
+       
+    </div>
+</body>
+</html>

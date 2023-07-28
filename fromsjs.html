@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        background: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 40vmax;
+        margin-left: 4vmax;
+        height: 45vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    input {
+        padding: 1vmax;
+        width: 90%;
+        border-radius: 10px;
+        outline: none;
+        font-size: larger;
+    }
+
+    button {
+        font-size: larger;
+        width: 30%;
+        margin: 0 auto;
+        background-color: grey;
+        color: white;
+        height: 3vmax;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    
+    <div class="main">
+        <form>
+            <input type="text" name="email" id="email" placeholder="Email..." required>
+            <input type="text" name="phone" id="phone" placeholder="Phone..." required>
+            <input type="password" name="password" id="password" placeholder="Password..." required>
+            <button type="submit" onclick="handleSubmit(event)">Register</button>
+        </form>
+    </div>
+<script>
+    function handleSubmit(e) {
+        e.preventDefault();
+        checkEmail()
+        checkPhone ()
+        checkPassword()
+    }
+    function checkEmail () {
+        let email = document.getElementById("email").value
+        console.log(email);
+        let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (!email.match(validRegex)) {
+            alert("Invalid email address!");
+        }
+    }
+    function checkPhone() {
+        let phone = document.getElementById("phone").value
+        console.log(phone);
+        let validRegex = /^\d{10}$/;
+        if (!phone.match(validRegex)) {
+            alert("Invalid Phone number")
+        }
+    }
+    function checkPassword() {
+        let password = document.getElementById("password").value
+        console.log(password);
+        let validRegex = /^[A-Za-z]\w{7,14}$/;
+        if (!password.match(validRegex)) {
+            // if (password != validRegex) {
+            alert('Invalid Password')
+        }
+    }
+</script>
+
+</body>
+</html>
