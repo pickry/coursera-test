@@ -13,6 +13,11 @@
         border: 2px whitesmoke solid;
         color: oldlace;
     }
+    p{
+        text-align: center;
+        font-style: italic;
+        color: burlywood;
+    }
 </style>
 <body>
     <table>
@@ -43,5 +48,15 @@
             <td>Pen</td>
         </tr>
     </table>
+    <p id="Greet"></p>
+    <script>
+        let ask = prompt("Please Enter Your Name");
+        if (ask != null){
+            document.getElementById("Greet").innerHTML = "Hello! "+ ask + " How Are You?";
+        }
+        else{
+            alert("Enter your name please!");
+        }
+    </script>
 </body>
 </html>
