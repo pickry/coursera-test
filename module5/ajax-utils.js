@@ -15,11 +15,11 @@
 
     }
     ajaxUtils.sendGetRequest = 
-    function(requestURL, responseHandler){//function defines the request the url needed etc
+    function(requestURL, responseHandler, isJsonResponse){//function defines the request the url needed etc
         var request = getRequestObject();
         request.onreadystatechange = 
         function(){
-            handleResponse(request, responseHandler);
+            handleResponse(request, responseHandler, isJsonResponse);
         };
         request.open("GET", requestURL, true);//true to be asynchronous
         request.send(null);//sending the actual post request
@@ -27,7 +27,16 @@
     function handleResponse(request, responseHandler){
         if((request.readyState == 4) &&
          (request.status == 200)) {
-            responseHandler(request);
+            if (isJsonResponse == undefined){
+                isJsonResponse = true;
+            }
+            if(isJsonResponse){
+                responseHandler(JSON.parse(request.responseText));
+            }
+            else{
+                responseHandler(request.responseText);
+            }
+            
         }
     } 
 
