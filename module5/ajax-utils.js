@@ -24,7 +24,7 @@
         request.open("GET", requestURL, true);//true to be asynchronous
         request.send(null);//sending the actual post request
     };
-    function handleResponse(request, responseHandler){
+    function handleResponse(request, responseHandler, isJsonResponse){
         if((request.readyState == 4) &&
          (request.status == 200)) {
             if (isJsonResponse == undefined){
