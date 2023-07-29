@@ -12,6 +12,23 @@ GET / index.html? firstName=Yaakov HTTP/1.1
 method--URI String--Query String-----HTTP version
 
 Ajax: Asynchronous Javascript and XML
+a. In traditional web flow the client requests for a page by clicking a button
+b. the request is fullfilled by server and 99% of time same page is loaded again with 
+    very little change.
+c. point is for such a little change the complet page was reloaded
+d. but with ajax only the small piece of data that's inserted into current page is sent by server
+e. SYNCHRONOUS EXECUTION: only one instruction is been executed at a time. Another can only be executed if first
+                          is done executing
+f. ASYNCHROUNOUS EXECUTION: more than one instructions executed at a time.
+g. how is an ajax request handled by js engine?
+    as an ajax request is encountered the request is sent to the HTTP requestor 
+    the address of the js function is recorded in order to return the response when the request has been processed
+    and the rest of the js code is executed in order. the response from http requestor is not waited upon
+    i.e the call back function is not waited upon 
+    response handler handles the response from server
+
+
+
 
 JSON
 Javascript object notation

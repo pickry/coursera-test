@@ -25,11 +25,11 @@
         request.send(null);//sending the actual post request
     };
     function handleResponse(request, responseHandler){
-        if((request.redyState == 4) &&
+        if((request.readyState == 4) &&
          (request.status == 200)) {
             responseHandler(request);
         }
-    }
+    } 
 
     global.$ajaxUtils = ajaxUtils;
 })(window);
